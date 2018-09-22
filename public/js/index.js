@@ -2,10 +2,6 @@ const endpoint = 'https://go-shorty.herokuapp.com'
 
 document.addEventListener('DOMContentLoaded', function () {
 
-    document.getElementById('url').addEventListener('click', () => {
-        document.getElementById('url').value = ''
-    });
-
     document.getElementById('shorten-button').addEventListener('click', () => {
         let longURL = document.getElementById('url').value;
         if (!longURL || longURL == '') {
